@@ -1,0 +1,67 @@
+<!--<label for="">ID: .</label>
+<input type="text" [value]="peliculaDet.id" disabled="true"><br>
+
+<label for="">Nombre: .</label>
+<input type="text" [value]="peliculaDet.nombre" disabled="true"><br>
+
+<label for="">Tipo: .</label>
+<input type="txt" [value]="peliculaDet.tipo" disabled="true"><br>
+
+<label for="">Fecha: .</label>
+<input type="text" [value]="peliculaDet.fechaDeEstreno" disabled="true"><br>
+
+<label for="">Publico: .</label>
+<input type="text" [value]="peliculaDet.cantidadDePublico" disabled="true"><br>
+
+<label for="">Foto: .</label>
+<input type="text" [value]="peliculaDet.foto" disabled="true">-->
+
+<div class="container">
+    <div class="row" >
+        <div class="col-sm">
+            <div class="row" >
+                <div class="col-sm">
+                    ID
+                </div>
+                <div class="col-sm">
+                    <input type="text" [value]="peliculaDet.id" disabled="true">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-sm">
+                    Nombre
+                </div>
+                <div class="col-sm">
+                    <input type="text" [value]="peliculaDet.nombre" disabled="true">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-sm">
+                    Tipo
+                </div>
+                <div class="col-sm">
+                    <input type="txt" [value]="peliculaDet.tipo" disabled="true">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-sm">
+                    Fecha
+                </div>
+                <div class="col-sm">
+                    <input type="text" [value]="peliculaDet.fechaDeEstreno" disabled="true">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-sm">
+                    Publico
+                </div>
+                <div class="col-sm">
+                    <input type="text" [value]="peliculaDet.cantidadDePublico" disabled="true">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img [src]="peliculaDet.foto" style="width:100px">
+        </div>
+    </div>
+</div>

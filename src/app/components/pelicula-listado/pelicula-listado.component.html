@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-sm">
+          ID
+        </div>
+        <div class="col-sm">
+          Nombre
+        </div>
+        <div class="col-sm">
+          Tipo
+        </div>
+        <div class="col-sm">
+            Fecha
+          </div>
+        <div class="col-sm">
+            Publico
+        </div>
+        <div class="col-sm">
+            Foto
+        </div>
+        <div class="col-sm">
+          Detalle
+      </div>
+    </div>
+    <div class="row" *ngFor="let peli of peliList">
+      <div class="col-sm">
+        {{peli.id}}
+      </div>
+      <div class="col-sm">
+        {{peli.nombre}}
+      </div>
+      <div class="col-sm">
+        {{peli.tipo}}
+      </div>
+      <div class="col-sm">
+        {{peli.fechaDeEstreno}}
+        </div>
+      <div class="col-sm">
+        {{peli.cantidadDePublico}}
+      </div>
+      <div class="col-sm">
+        <img [src]="peli.foto" style="width:100px">
+      </div>
+      <div class="col-sm">
+        <button type="button" class="btn btn-primary" (click)="mandarDetalle(peli)">Detalle</button>
+      </div>
+    </div>
+  </div>
